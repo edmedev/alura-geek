@@ -1,0 +1,23 @@
+/* Estas son las variables de colores y estilos */
+
+:root {
+    /* Colores */
+    --azul-navy: #001f3f;
+    --azul-100: #2A7AE4;
+    --azul-10: #EAF2FD;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --gris-oscuro: #333;
+    --gris-claro: #f5f5f5;
+    --preto-100: #464646;
+    --preto-50: #A2A2A2;
+    --preto-30: #C8C8C8;
+    --preto-05: #F5F5F5;
+    --aqua-bajo: #C0FFFB;
+    --turquesa-palido: #76b5c5;
+    --rojo-intenso: #df2525;
+    --verde-profundo: #047900;
+    /* Estilos de fuentes */
+    --raleway: 'raleway', sans-serif;
+}
+

@@ -1,0 +1,147 @@
+.header {
+    width: 100%;
+    background: var(--azul-10);
+    padding: 2rem 4rem;
+}
+
+.header__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    width: 11rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__searchForm {
+    width: 24.5625rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1.25rem;
+    background: var(--preto-05);
+}
+
+.header__searchInput {
+    display: flex;
+    align-items: flex-start;
+    flex: 1 0 0;
+    background: var(--preto-05);
+    border: none;
+}
+
+.header__searchInput::placeholder {
+    color: var(--preto-100);
+    font-family: var(--raleway);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+.header__searchButton {
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+    background: var(--preto-05);
+    border: none;
+    cursor: pointer;
+}
+
+#buttonLogin {
+    width: 11.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    padding: 1rem;
+    border: 2px solid var(--azul-100);
+    background: var(--azul-10);
+    color: var(--azul-100);
+    cursor: pointer;
+}
+
+#buttonLogin:hover {
+    background: var(--azul-100);
+    color: var(--azul-10);
+}
+
+.header__mobileIcon {
+    display: none;
+}
+
+/* Media Queries */
+/* Estilos para telefonos moviles menores a 339px de ancho y reloj inteligentes */
+@media screen and (max-width: 339px) {
+    .header {
+        padding: 1rem;
+    }
+    .header__container {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    .header__logo {
+        width: 100%;
+    }
+    .header__searchForm {
+        width: 100%;
+        margin: auto;
+        display: none;
+        flex-direction: column;
+    }
+    #buttonLogin {
+        width: 100%;
+        margin: auto;
+        padding: 0.75rem 1rem;
+    }
+    .header__mobileIcon {
+        display: block;
+        padding-top: 0.8rem;
+    }
+}
+/* Estilos para telefonos moviles mayores a 340px de ancho */
+@media screen and (min-width: 340px) and (max-width: 767px) {
+    .header {
+        padding: 1rem;
+    }
+    .header__logo {
+        width: 6.25rem;
+    }
+    .header__searchForm {
+        width: 100%;
+        display: none;
+    }
+    #buttonLogin {
+        width: 8.31rem;
+        padding: 0.75rem 1rem;
+    }
+    .header__mobileIcon {
+        display: block;
+    }
+}
+
+/* Estilos para tablet y pantallas menores a 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header {
+        padding: 2rem;
+    }
+    .header__logo {
+        width: 6.25rem;
+    }
+    .header__searchForm {
+        width: 17rem;
+    }
+    #buttonLogin {
+        width: 10.375rem;
+        padding: 0.75rem 1rem;
+    }
+}
+

@@ -1,0 +1,29 @@
+/* Estas son las variables de colores y estilos */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    max-width: 90rem;
+    margin: auto;
+    background-color: var(--blanco);
+    font-family: var(--raleway);
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 71rem;
+    margin: auto;
+}
+

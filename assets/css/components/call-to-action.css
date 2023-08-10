@@ -1,0 +1,66 @@
+/* Estilos de la seccion llamada a la accion */
+
+.callToAction {
+    width: 100%;
+    height: auto;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+    background-image: url(../../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--blanco);
+}
+
+.callToAction__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.callToAction__button {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    background: var(--azul-100);
+    border: none;
+    color: var(--blanco);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.callToAction__button:hover, .callToAction__button:focus {
+    background: var(--blanco);
+    border: 2px solid var(--azul-100);
+    color: var(--azul-100);
+}
+
+/* Media Queries */
+/* Estilos para telefonos moviles */
+@media screen and (max-width: 767px) {
+    .callToAction {
+        padding: 4rem 1rem;
+    }
+}
+
+/* Estilos para tablet y pantallas menores a 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .callToAction {
+        padding: 4rem 2rem;
+    }
+}
+

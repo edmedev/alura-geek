@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- metas basicas -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>Encabezado</title>
+        <!-- Estilos font-family -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Estilos CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="../assets/css/styles.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header__container container">
+                <div>
+                    <a href="../">
+                        <img src="../assets/images/logo.svg" alt="Logotipo de Alura Geek" class="header__logo">
+                    </a>
+                </div>
+
+                <form class="header__searchForm">
+                    <input type="text" class="header__searchInput" placeholder="¿Qué deseas buscar?">
+                    <button type="submit" class="header__searchButton">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #2A7AE4;"></i>
+                    </button>
+                </form>
+
+                <form class="header__buttonLogin" id="headerFormButton">
+                    <input id="buttonLogin" type="submit" value="">
+                </form>
+
+                <div class="header__mobileIcon">
+                    <i class="fa-solid fa-magnifying-glass" id="mobileIcon" style="color: #2A7AE4;"></i>
+                </div>
+            </div>
+        </header>
+
+        <script type="module" src="../js/components/headerButton.js"></script>
+    </body>
+</html>
