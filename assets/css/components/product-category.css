@@ -1,0 +1,73 @@
+/* Estos son los estilos de las categorias de los productos */
+
+.productCategory {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    color: var(--preto-100);
+    padding: 0 4rem;
+}
+
+.productCategory__head {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productCategory__products {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.productCategory__product {
+    width: 11rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    flex: 1 0 0;
+}
+
+.productCategory__product img {
+    width: 100%;
+    align-self: stretch;
+}
+
+/* Media Queries */
+/* Estilos para telefonos moviles */
+@media screen and (max-width: 767px) {
+    .productCategory {
+        padding: 1rem;
+    }
+    .productCategory__products {
+        flex-wrap: wrap;
+    }
+    .productCategory__product {
+        width: 9.75rem;
+        align-self: stretch;
+        flex: auto;
+    }
+    .productCategory__products--hide {
+        display: none;
+    }
+}
+
+/* Estilos para tablet y pantallas menores a 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .productCategory {
+        padding: 2rem;
+    }
+    .productCategory__product {
+        width: 10.25rem;
+    }
+    .productCategory__products--hide {
+        display: none;
+    }
+}
+

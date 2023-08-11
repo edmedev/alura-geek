@@ -5,6 +5,7 @@
 @import url(./components/header.css);
 @import url(./components/call-to-action.css);
 @import url(./components/footer.css);
+@import url(./components/product-category.css);
 
 /* Estos son los estilos generales de tipografía del sitio */
 .main-title {
@@ -28,11 +29,19 @@
     line-height: normal;
 }
 
-.quartet-title, .fifth-title {
+.quartet-title {
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.fifth-title {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--azul-100);
 }
 
 .paragraph {

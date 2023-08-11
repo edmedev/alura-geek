@@ -1,4 +1,5 @@
 .footer {
+    width: 100%;
     background: var(--azul-10);
     color: var(--preto-100);
     display: flex;
@@ -6,6 +7,9 @@
 }
 
 .footer__sectionTop {
+    width: 100%;
+    max-width: 79rem;
+    margin: auto;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -14,10 +18,12 @@
 }
 
 .footer__information {
+    width: 29rem;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 7rem;
+    flex: 1 0 0;
 }
 
 .footer__logotipo {
@@ -26,6 +32,7 @@
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    flex: 1 0 0;
 }
 
 .footer__navigationLinks {
@@ -35,15 +42,17 @@
     align-items: flex-start;
     gap: 1.5rem;
     flex-shrink: 0;
+    flex: 1 0 0;
 }
 
 .footer__contact {
-    width: calc(100% - 36rem);
+    width: 35rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
     flex-shrink: 0;
+    flex: 1 0 0;
 }
 
 .footer__contactForm {
