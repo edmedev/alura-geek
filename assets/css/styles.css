@@ -6,6 +6,7 @@
 @import url(./components/call-to-action.css);
 @import url(./components/footer.css);
 @import url(./components/product-category.css);
+@import url(./components/login.css);
 
 /* Estos son los estilos generales de tipografía del sitio */
 .main-title {
@@ -68,7 +69,7 @@
         font-size: 1.375rem;
     }
     .tertiary-title {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
     .fifth-title {
         font-size: 0.875rem;

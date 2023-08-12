@@ -15,18 +15,21 @@
 
     <body>
         <!-- Este es el encabezado del sitio web -->
-        <header id="header"></header>
+        <header>
+            <!-- Importando la sección del menú de navegación en la carpeta templeates -->
+            <section id="header"></section>
 
-        <main>
             <!-- Esta es la sección de llamada a la acción-->
             <section class="callToAction">
                 <div class="callToAction__container container">
                     <h1 class="main-title">Agosto Promocional</h1>
                     <h3 class="tertiary-title">Productos selecionados con 33% de descuento</h3>
-                    <button class="callToAction__button">Ver consolas</button>
+                    <button type="button" class="callToAction__button" id="buttonViewConsoles">Ver consolas</button>
                 </div>
             </section>
+        </header>
 
+        <main>
             <!-- Esta es la sección de la categoria de productos Star Wars -->
             <section class="productCategory">
                 <div class="productCategory__head container">
@@ -80,7 +83,7 @@
             </section>
 
             <!-- Esta es la sección de la categoria de productos Consolas -->
-            <section class="productCategory">
+            <section class="productCategory" id="ver-consolas">
                 <div class="productCategory__head container">
                     <h2 class="secondary-title">Consolas</h2>
                     <a href="./productos.html" class="fifth-title">Ver todo ➔</a>
