@@ -1,0 +1,93 @@
+/* Estos son los estilos de las categorias de los productos */
+
+.productsPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    color: var(--preto-100);
+    padding: 0 4rem;
+}
+
+.productsPage__head {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productsPage__addProduct {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    background: var(--azul-100);
+    border: none;
+    color: var(--blanco);
+    font-family: var(--raleway);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.productsPage__addProduct:hover {
+    background: var(--azul-10);
+    border: 2px solid var(--azul-100);
+    color: var(--azul-100);
+}
+
+.productsPage__products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4rem 1rem;
+}
+
+.productsPage__product {
+    width: 11rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    flex: auto;
+}
+
+.productsPage__product img {
+    width: 100%;
+    align-self: stretch;
+}
+
+/* Media Queries */
+/* Estilos para telefonos moviles */
+@media screen and (max-width: 767px) {
+    .productsPage {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .productsPage__products {
+        gap: 1.5rem 1rem;
+    }
+    .productsPage__product {
+        width: 9.75rem;
+        align-self: stretch;
+    }
+}
+
+/* Estilos para tablet y pantallas menores a 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .productsPage {
+        padding: 2rem;
+    }
+    .productsPage__products {
+        gap: 2rem 1rem;
+    }
+    .productsPage__product {
+        width: 10.25rem;
+    }
+}
+
