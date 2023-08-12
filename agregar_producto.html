@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <!-- Metas basicas -->
+        <!-- metas basicas -->
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-        <title>Agregar Producto - Alura Geek</title>
+        <!-- metas del sitio -->
+        <title>Agregar producto - Alura Geek</title>
+        <link rel="icon" type="image/jpg" href="./assets/images/logo.svg"/>
+        <meta name="keywords" content="ecommerce, tienda online, tienda virtual">
+        <meta name="description" content="Ecommerce para compras online de productos de las categorias de star wars, consolas y diversos. Haz tu compra a un clic aquí.">
+        <meta name="author" content="Eduardo Mendez">
         <!-- Estilos font-family -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,9 +23,36 @@
         <header id="header"></header>
 
         <main>
-            <section class="container" style="text-align:center; display:flex; flex-direction:column; gap:1.6rem;">
-                <h1 class="secondary-title">Agregar Producto</h1>
-                <p class="paragraph">Página para agregar el producto</p>
+            <section class="addProduct">
+                <h2 class="secondary-title">Agregar nuevo producto</h2>
+
+                <form class="addProduct__form">
+                    <div class="addProduct__textBox">
+                        <label class="textBoxLabel">URL de imagen</label>
+                        <input type="url" name="url" placeholder="data:image/iVBORw0KGgoASUhEMgAA.png" required class="textBoxInput">
+                    </div>
+
+                    <div class="addProduct__textBox">
+                        <label class="textBoxLabel">Categoría</label>
+                        <input type="text" name="category" placeholder="Consolas" required class="textBoxInput">
+                    </div>
+
+                    <div class="addProduct__textBox">
+                        <label class="textBoxLabel">Nombre del producto</label>
+                        <input type="text" name="product" placeholder="Producto XYZ" required class="textBoxInput">
+                    </div>
+
+                    <div class="addProduct__textBox">
+                        <label class="textBoxLabel">Precio del producto</label>
+                        <input type="number" name="price" placeholder="$ 60,00" required class="textBoxInput">
+                    </div>
+
+                    <div class="addProduct__textBox">
+                        <textarea type="text" name="description" placeholder="Descripción del producto" required rows="4" class="textArea"></textarea>
+                    </div>
+
+                    <button type="submit" class="addProduct__button">Agregar producto</button>
+                </form>
             </section>
         </main>
 

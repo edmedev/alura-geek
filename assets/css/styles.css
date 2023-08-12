@@ -8,6 +8,7 @@
 @import url(./components/product-category.css);
 @import url(./components/login.css);
 @import url(./components/products-page.css);
+@import url(./components/add-product.css);
 
 /* Estos son los estilos generales de tipografía del sitio */
 .main-title {
