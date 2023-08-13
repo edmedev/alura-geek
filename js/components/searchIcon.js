@@ -1,4 +1,4 @@
-//Función para hacer clic al menú movil y desplegar el menú de navegación:
+//Función que al hacer clic al icono movil de busqueda pueda desplegar el formulario de busqueda:
 
 function searchIcon() {
     const mobileIcon = document.getElementById("mobileIcon");
